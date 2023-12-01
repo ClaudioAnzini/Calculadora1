@@ -75,6 +75,10 @@ body{
     background-color: orange !important;
 
 }
+.laranja:hover{
+    background-color: rgb(206, 134, 0) !important;
+    border: solid 1px #ffffff !important;
+}
 
 #numero-0{
     grid-column: span 2;
@@ -83,9 +87,17 @@ body{
 .cinza{
     background-color: rgb(179, 179, 179) !important;
 }
+.cinza:hover{
+    background-color: rgb(158, 156, 156) !important;
+    border: solid 1px #ffffff !important;
+}
 
 .numeros{
     background-color: rgb(102, 100, 100) !important;
+}
+.numeros:hover{
+    background-color: rgb(53, 53, 53) !important;
+    border: solid 1px #ffffff !important;
 }
 .cinza, .numeros, .laranja, .numero-0{
     color: white;
