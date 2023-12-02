@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="calculadora">
         <h3>Minha calculadora</h3>
         <div id="tela-superior">
-            <div id="ver-operacao">213123</div>
-            <div id="operacao">21312</div>
+            <div id="ver-operacao"></div>
+            <div id="operacao"></div>
         </div>
         <div id="botoes">
-            <button class="cinza">CE</button>
-            <button class="cinza">C</button>
-            <button class="cinza">DEL</button>
-            <button class="laranja">/</button>
-            <button class="numeros">7</button>
-            <button class="numeros">8</button>
-            <button class="numeros">9</button>
-            <button class="laranja">*</button>
-            <button class="numeros">4</button>
-            <button class="numeros">5</button>
-            <button class="numeros">6</button>
-            <button class="laranja">-</button>
-            <button class="numeros">1</button>
-            <button class="numeros">2</button>
-            <button class="numeros">3</button>
-            <button class="laranja">+</button>
-            <button class="numeros" id="numero-0" >0</button>
-            <button class="numeros">.</button>
-            <button id="btn-igual" class="laranja">=</button>
+            <button class="cinza" onclick="apagarNumeroErrado()">CE</button>
+            <button class="cinza" onclick="apagarTudo()">C</button>
+            <button class="cinza" onclick="apagarUltimo()">DEL</button>
+            <button class="laranja" onclick="adicionarConta('/')">/</button>
+            <button class="numeros" onclick="adicionarNumero('7')">7</button>
+            <button class="numeros" onclick="adicionarNumero('8')">8</button>
+            <button class="numeros" onclick="adicionarNumero('9')">9</button>
+            <button class="laranja" onclick="adicionarConta('*')">*</button>
+            <button class="numeros" onclick="adicionarNumero('4')">4</button>
+            <button class="numeros" onclick="adicionarNumero('5')">5</button>
+            <button class="numeros" onclick="adicionarNumero('6')">6</button>
+            <button class="laranja" onclick="adicionarConta('-')">-</button>
+            <button class="numeros" onclick="adicionarNumero('1')">1</button>
+            <button class="numeros" onclick="adicionarNumero('2')">2</button>
+            <button class="numeros" onclick="adicionarNumero('3')">3</button>
+            <button class="laranja" onclick="adicionarConta('+')">+</button>
+            <button class="numeros" id="numero-0" onclick="adicionarNumero('0')">0</button>
+            <button class="numeros" onclick="adicionarPonto('.')">.</button>
+            <button id="btn-igual" class="laranja" onclick="calcularResultado()">=</button>
         </div>
     </div>
 </body>
