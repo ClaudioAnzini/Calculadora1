@@ -10,7 +10,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3.5em;;
+    padding: 3.5em;
 }
 
 #calculadora{
@@ -32,6 +32,7 @@ body{
 
 #tela-superior{
     text-align: right;
+    max-width: 100%;
 }
 
 #ver-operacao{
@@ -40,6 +41,7 @@ body{
     font-size: 1.3em;
     overflow: break-word;
     min-height: 1.6em;
+    max-width: 100%;
 }
 
 #operacao{
@@ -101,4 +103,14 @@ body{
 }
 .cinza, .numeros, .laranja, .numero-0{
     color: white;
+}
+#idioma{
+    margin-top: -733px !important;
+    margin-right: -315px;
+    z-index: 1;
+    position: fixed;
+}
+#idioma{
+    border-radius: 15px;
+    padding: 3px;
 }

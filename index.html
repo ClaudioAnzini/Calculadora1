@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/calculadora.png" type="image/x-icon" />
+    
 </head>
 <body>
+    <select id="idioma">
+        <option value="br">Português[Brasil]</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="ru">Русский</option>
+    </select>
     <div id="calculadora">
-        <h3>Minha calculadora</h3>
+        <h3 id="calc">Minha calculadora</h3>  
+        <br><br>  
         <div id="tela-superior">
             <div id="ver-operacao"></div>
             <div id="operacao"></div>
         </div>
+
         <div id="botoes">
             <button class="cinza" onclick="apagarNumeroErrado()">CE</button>
             <button class="cinza" onclick="apagarTudo()">C</button>
@@ -36,5 +46,7 @@
             <button id="btn-igual" class="laranja" onclick="calcularResultado()">=</button>
         </div>
     </div>
+    <script src="script.js"></script>
+    <script src="tradutor.js"></script>
 </body>
 </html>
