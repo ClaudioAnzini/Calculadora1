@@ -69,10 +69,6 @@ body{
     cursor: pointer;
 }
 
-#botoes .number{
-
-}
-
 .laranja{
     background-color: orange !important;
 
@@ -105,10 +101,11 @@ body{
     color: white;
 }
 #idioma{
-    margin-top: -733px !important;
+    margin-top: -698px !important;
     margin-right: -315px;
     z-index: 1;
     position: fixed;
+    cursor: pointer;
 }
 #idioma{
     border-radius: 15px;
