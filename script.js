@@ -1,25 +1,24 @@
 let operacaoAtual = [];
 let resultadoAtual = [];
 
-function atualizarTela() {
-    document.getElementById('operacao').innerText = conta;
-    document.getElementById('ver-operacao').innerText = resultadoAtual;
-}
-
 function adicionarNumero(numero) {
+    if (resultadoAtual !== "") {
+        operacaoAtual = "";
+        resultadoAtual = "";
+    }
     operacaoAtual += numero;
     atualizarTela();
 }
 
 function adicionarConta(operador) {
-    if (operacaoAtual !== "")  {
+    if (operacaoAtual !== "") {
         operacaoAtual += operador;
         atualizarTela();
     }
 }
 
 function adicionarPonto() {
-    operacaoAtual += ".";
+    operacaoAtual += '.';
     atualizarTela();
 }
 
@@ -32,7 +31,6 @@ function apagarTudo() {
     operacaoAtual = "";
     resultadoAtual = "";
     atualizarTela();
-    document.getElementById('btn-igual').focus();
 }
 
 function apagarUltimo() {
@@ -40,14 +38,19 @@ function apagarUltimo() {
     atualizarTela();
 }
 
-let conta = operacaoAtual;
-
 function calcularResultado() {
-        resultadoAtual = eval(operacaoAtual);
-        operacaoAtual = resultadoAtual.toString();
-        atualizarTela();
 
+        resultadoAtual = eval(operacaoAtual);
+        document.getElementById('ver-operacao').innerText = operacaoAtual;
+        document.getElementById('operacao').innerText = resultadoAtual;
+        operacaoAtual = resultadoAtual.toString();
 }
+
+function atualizarTela() {
+    document.getElementById('operacao').innerText = operacaoAtual;
+    document.getElementById('ver-operacao').innerText = "";
+}
+
 
 document.addEventListener("keypress", (e) => {
     if (e.key == "1") {
@@ -87,7 +90,7 @@ document.addEventListener("keypress", (e) => {
         calcularResultado();
     }
     if (e.key == "Backspace") {
-        apagarNumeroErrado();
+        apagarUltimo();
     }
     if (e.key == "+") {
         adicionarNumero("+");
@@ -101,6 +104,4 @@ document.addEventListener("keypress", (e) => {
     if (e.key == "*") {
         adicionarNumero("*");
     }
-
-    console.log(e.key)
 })
