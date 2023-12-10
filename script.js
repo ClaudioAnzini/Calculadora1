@@ -56,52 +56,53 @@ document.addEventListener("keypress", (e) => {
     if (e.key == "1") {
         adicionarNumero("1");
     }
-    if (e.key == "2") {
+    else if (e.key == "2") {
         adicionarNumero("2");
     }
-    if (e.key == "3") {
+    else if (e.key == "3") {
         adicionarNumero("3");
     }
-    if (e.key == "4") {
+    else if (e.key == "4") {
         adicionarNumero("4");
     }
-    if (e.key == "5") {
+    else if (e.key == "5") {
         adicionarNumero("5");
     }
-    if (e.key == "6") {
+    else if (e.key == "6") {
         adicionarNumero("6");
     }
-    if (e.key == "7") {
+    else if (e.key == "7") {
         adicionarNumero("7");
     }
-    if (e.key == "8") {
+    else if (e.key == "8") {
         adicionarNumero("8");
     }
-    if (e.key == "9") {
+    else if (e.key == "9") {
         adicionarNumero("9");
     }
-    if (e.key == "0") {
+    else if (e.key == "0") {
         adicionarNumero("0");
     }
-    if (e.key == ".") {
+    else if (e.key == ".") {
         adicionarPonto(".");
     }
-    if (e.key == "Enter") {
+    else if (e.key == "Enter") {
         calcularResultado();
     }
-    if (e.key == "Backspace") {
+    else if (e.key == "Backspace") {
         apagarUltimo();
     }
-    if (e.key == "+") {
+    else if (e.key == "+") {
         adicionarNumero("+");
     }
-    if (e.key == "-") {
+    else if (e.key == "-") {
         adicionarNumero("-");
     }
-    if (e.key == "/") {
+    else if (e.key == "/") {
         adicionarNumero("/");
     }
-    if (e.key == "*") {
+    else if (e.key == "*") {
         adicionarNumero("*");
     }
+
 })
